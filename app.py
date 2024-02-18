@@ -21,6 +21,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/interview')
+def interview():
+    return render_template('interview.html')
+
 # @app.route('/upload', methods=['POST'])
 # def upload():
 #     if 'file' not in request.files:
