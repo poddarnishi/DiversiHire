@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify, url_for
 import PyPDF2
 import speech_recognition as sr
 import os
@@ -37,10 +37,11 @@ def speech_to_text():
         audio = recognizer.listen(source, timeout=10)
     try:
         text = recognizer.recognize_google(audio)
-        gTTS(text=text, lang='en', slow=False).save("Answer1.mp3")
-        os.system("Answer1.mp3") 
+        gTTS(text=text, lang='en', slow=False).save("static/Answer1.mp3")
+        audio_url = url_for('static', filename='Answer1.mp3')
         print(text)
-        return text
+        return jsonify({'audio_url': audio_url,'text':text})
+
     except sr.UnknownValueError:
         return "Could not understand audio"
     except sr.RequestError as e:

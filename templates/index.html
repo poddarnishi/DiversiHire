@@ -17,28 +17,23 @@
     <div>
         <h2>Play Audio:</h2>
         <audio controls id="audioPlayer">
-            <source src="" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
-    <button id="playAudioButton">Play Audio File</button>
     <script>
         document.querySelector('form').addEventListener('submit', async (e) => {
             e.preventDefault();
             const response = await fetch('/speech-to-text', { method: 'POST'});
             const data = await response.text();
-            document.getElementById('result').textContent = data;
+            document.getElementById('result').textContent = data.text;
         });
-        function playAudio(url) {
-            const audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.src = url;
-            audioPlayer.play();
-        }
-        document.getElementById('playAudioButton').addEventListener('click', () => {
-            // Specify the URL of the audio file to play
-            const audioFileUrl = 'Answer1.mp3'; // Replace with your audio file URL
-            playAudio(audioFileUrl);
-        });
+        fetch('/audio_url')
+            .then(response => response.json())
+            .then(data => {
+                // Set audio URL dynamically
+                document.getElementById('audioPlayer').src = data.audio_url;
+            })
+            .catch(error => console.error('Error:', error));
     </script>
 </body>
 </html>
