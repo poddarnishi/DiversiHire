@@ -1,0 +1,87 @@
+REDACTED_NAME REDACTED_NAME 
+ REDACTED_PHONE | REDACTED_EMAIL | REDACTED 
+ EDUCATION 
+ University of Massachusetts , Amherst , REDACTED 
+ Exp . Graduation May 2025 
+ Master of Science in Computer Science 
+ ( GPA 4.0 ) 
+ Software Engineering , Distributed Systems , Information Retrieval 
+ Veermata Jijabai Technological Institute , Mumbai , REDACTED 
+ May 2023 
+ Candidate for Bachelor of Technology in Computer Engineering with Distinction 
+ ( CGPA 9.19/10 ) 
+ WORK EXPERIENCE 
+ Veermata Jijabai Technological Institute , Mumbai , REDACTED 
+ August 2022 – May 2023 
+ Research Assistant under REDACTED Sunil G Bhirud - Director of VJTI 
+ ● 
+ Developed Named Entity Recognition model to identify drugs ’ chemical and street names from unstructured data 
+ obtained by crawling the Tor web URLs . 
+ ● 
+ Authored paper detailing inferences and presented results at prestigious IEEE International Conference of Trends in 
+ Quantum Computing and Emerging Business Technologies 2022 . 
+ Morgan Stanley , Mumbai , REDACTED 
+ May 2022 – July 2022 
+ Technology Analyst Intern 
+ ● 
+ Engineered a Long and Short - Term Memory ( LSTM ) Auto - Encoder model in Python using Keras Deep Learning 
+ Library to enhance anomaly detection in system - generated alerts . 
+ ● 
+ Conducted comprehensive data augmentation and feature engineering , meticulously selecting relevant features to 
+ mitigate overfitting , resulting in a highly accurate model . 
+ ● 
+ Collaborated with cross - functional teams to integrate the anomaly detection system with their data , contributing to 
+ the enhancement of the entire department ’s alert monitoring . 
+ PROJECTS 
+ Leveraging Common Sense Knowledge Graphs for Text Analysis 
+ ● 
+ Executed advanced techniques utilizing natural language processing , machine learning , and data mining to extract 
+ insights from unstructured data sources on the dark web . 
+ ● 
+ Implemented cutting - edge preprocessing methods utilizing NLP models , entity extraction with Zero - Shot Learning 
+ and ConceptNet , and relation extraction through dependency parsing and rule - based matching . 
+ CVRP - based Delivery System for Farmers Market E - commerce 
+ ● 
+ Developed e - commerce grocery shopping website using NodeJs , ExpressJs , and Firebase , enhancing user 
+ experience with features like pagination , filtering , fuzzy search . 
+ ● 
+ Created an efficient delivery system based on genetic algorithms and its crossover techniques , optimizing delivery 
+ routing for orders and reducing delivery times . 
+ Advanced Skin Lesion Classification with Deep Learning 
+ ● 
+ Deployed deep learning techniques such as Convolutional Neural Networks ( CNN ) for skin lesion classification using 
+ images consisting of 7 different classes of skin diseases . 
+ ● 
+ Built CNN models using image recognition architectures , and compared the accuracy reached with each model . 
+ ● 
+ Constructed modified Vision Transformer with two new layers to improve model 's accuracy and presented results 
+ at IEEE – International Conference on Advances in Science & Technology 2022 . 
+ REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME 
+ ● 
+ Formulated a safety application using REDACTED_NAME and Firebase and implemented an emergency SOS feature that 
+ notifies predefined contacts or authorities with a REDACTED button press . 
+ ● 
+ Integrated with Google Maps API to enable real - time location sharing with saved contacts during emergencies . 
+ ● 
+ Connected a shake plugin for gesture - based SOS activation , enhancing user convenience . 
+ TECHNICAL SKILLS 
+ ● 
+ Technologies : C , REDACTED_NAME , Python , REDACTED_NAME , REDACTED_NAME , HTML / CSS , REDACTED_NAME , ExpressJS , NodeJS , React , Flask , Django , MATLAB 
+ ● 
+ Data Management : MySQL , Firebase , MongoDB , AWS 
+ ● 
+ REDACTED_NAME REDACTED_NAME REDACTED_NAME : REDACTED_NAME REDACTED_NAME REDACTED_NAME , Keras , NumPy , REDACTED_NAME , TensorFlow 
+ EXTRACURRICULAR ACTIVITIES 
+ ● 
+ Secured 1st position out of 200 teams in HackGirlSummer2.0 ( June 2021 ) for designing HonestHire , a 
+ groundbreaking web application aimed at promoting gender equality by blind hiring practices . 
+ ● 
+ Achieved 2nd position in the National Level Hackathon ERR404 ( March 2021 ) , for building a processing system to 
+ address the requirements of the Bitkraft company . 
+ ● 
+ Tutored underprivileged children with non - profit The Girl Code ( November 2021 to June 2022 ) . Conducted 
+ technical workshops positively impacting the lives of around 50 girls , empowering them with skills and knowledge . 
+ ● 
+ Actively contributed to an Open Source program called Script Winter of Code ( January 2021 to February 2021 ) . 
+ Created a website for a GitHub repository and prepared a Python script for automating the process of sending 
+ WhatsApp messages , showcasing proficiency in coding and automation techniques . 
