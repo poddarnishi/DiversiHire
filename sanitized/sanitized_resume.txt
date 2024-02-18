@@ -1,87 +1,82 @@
-REDACTED_NAME REDACTED_NAME of 1 
- Print Date : 01/28/2024 
- REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME :            Vaishnavi Shah 
- Student ID :    33984452 
- Birthdate : 
- 01 - 10 
- Beginning of Graduate Record 
-      
- Fall 2023 
- Program : 
- Computer Science 
- Major : 
- Computer Science ( MS ) 
- Course 
- Description 
- Attempted 
- Earned 
- Grade 
- Points 
- COMPSCI 
-  520 
- Thry & Practice / REDACTED_NAME REDACTED_NAME 
- 3.000 
- 3.000 
- A 
- 12.000 
- COMPSCI 
-  578 
- Distributed Computng & Systems 
- 3.000 
- 3.000 
- A 
- 12.000 
- COMPSCI 
-  646 
- Information Retrieval 
- 3.000 
- 3.000 
- A 
- 12.000 
- 
- Attempted 
- Earned 
- GPA Units 
- Points 
- Term GPA : 
- 4.000 
- Term Totals : 
- 9.000 
- 9.000 
- 9.000 
- 36.000 
- 
- Cum GPA : 
- 4.000 
- Cum Totals : 
- 9.000 
- 9.000 
- 9.000 
- 36.000 
-      
- Graduate Career Totals 
- Attempted 
- Earned 
- GPA Units 
- Points 
- Cum Enrollment GPA : 
- 4.000 
- Cum Enrollment Totals : 
- 9.000 
- 9.000 
- 9.000 
- 36.000 
- REDACTED_NAME REDACTED_NAME REDACTED_NAME : 
- Transfer Totals : 
- 0.000 
- 0.000 
- 0.000 
- 0.000 
- Combined Cum GPA : 
- 4.000 
- Combined Totals : 
- 9.000 
- 9.000 
- 9.000 
- 36.000 
- End of Unofficial Transcript 
+ISHA NALAWADE 
+ REDACTED_PHONE | REDACTED_EMAIL | REDACTED_URL | 
+ REDACTED | https://ishanalawade.github.io/Portfolio/ 
+ EDUCATION 
+ University of Massachusetts , Amherst , REDACTED_NAME , REDACTED 
+ September 2023 - May 2025 
+ Masters of Science in Computer Science 
+ Relevant Coursework : Computer & Network Security , Theory and Practice of Software Engineering , Information Retrieval 
+ University of Mumbai , Maharashtra , REDACTED ( CGPA 9.72/10 ) 
+ August 2019 - June 2023 
+ Bachelor of Engineering in Information Technology 
+ Relevant Coursework : Advanced Data Structures , Operating System , Object - Oriented Programming , DevOps 
+ Achievements : General Secretary of the College , 120 hours of voluntary work , Won national - level drama competitions 
+ TECHNICAL SKILLS 
+ ● 
+ Programming languages and Operating Systems : C++ , Python , REDACTED_NAME , C , HTML , CSS , PHP , JavaScript , Windows , Linux , Unix 
+ ● 
+ REDACTED_NAME , Web Technologies , Testing : REDACTED_NAME , Spring , Spring Boot , Django , Flask , React.js , Node.js , REDACTED_NAME , Junits 
+ ● 
+ Databases , Cloud Platforms and REDACTED_NAME : MongoDB , Oracle DB , MySQL , AWS , Git , VMWare , REDACTED_NAME 
+ ● 
+ Key Skills : Communication , Leadership , Decision - making , Critical Thinking 
+ PROFESSIONAL EXPERIENCE 
+ JPMorgan Chase & Co. , Mumbai , REDACTED |Corporate Investment Banking |Summer Intern 
+ June 2022 – July 2022 
+ ● 
+ Devised and implemented a foundational REDACTED_NAME architecture utilizing REDACTED_NAME REDACTED_NAME , including setting up REDACTED_NAME brokers , 
+ producers , and consumers to facilitate real - time data processing . 
+ ● 
+ Designed and programmed logic for Retry and Replay mechanisms in Java Spring Boot and Oracle DB , reducing message 
+ failure rates by 70 % . 
+ ● 
+ Integrated Schema Registry to define the schema of messages sent over REDACTED_NAME and set up serializers and deserializers to 
+ convert messages into bytes and vice versa , ensuring data consistency and reducing message processing time by 25 % . 
+ ● 
+ Presented my work , along with the impact and benefits of the design to an audience of 200 colleagues and seniors . 
+ Iremify , Mumbai , REDACTED | Web Development Intern 
+ June 2021 – July 2021 
+ ● 
+ REDACTED_NAME REDACTED_NAME REDACTED_NAME to craft the user interface with HTML , CSS , and REDACTED_NAME , resulting in a user - friendly 
+ interface with improved user experience . 
+ ● 
+ Managed MySQL database in conjunction with Python Django back - end demonstrating compliance with best practices in 
+ database management , and achieved a significant 60 % enhancement in overall performance . 
+ ● 
+ Led a team of 4 and collaborated on the integration of REST APIs and deployment of the website . 
+ ACADEMIC PROJECTS AND PAPERS 
+ Missing Alert and Report System ( MARS ) | REDACTED_NAME , Spring Boot , ReactJS , Tailwind CSS , and MySQL | ( link ) 
+ ● 
+ Implemented a web application with a React front - end and a Spring Boot server to notify users about any missing 
+ reports found in the vicinity , through email utilizing the REDACTED_NAME SMTP module . 
+ ● 
+ Engineered a robust SQL database that enables seamless image uploads and retrieval of crucial information . 
+ ● 
+ Authored a research paper in the International Research Journal of Engineering and Technology . 
+ Career Space | HTML , CSS , JavaScript , Python , Flask , PHP , and MySQL | ( link ) 
+ ● 
+ Programmed a web - based application to provide a career recommendation and resume - building platform . 
+ ● 
+ Trained the K - Nearest Neighbors Classifier to recommend a career path to students with an accuracy of 97 % . 
+ ● 
+ Employed Google ’s SERP API for scraping job openings , blogs , and YouTube courses relevant to a career . 
+ ● 
+ Won 1st prize in a Hackathon organized by Vidyavardhini College of Engineering and Technology , Mumbai , 2022 . 
+ REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME | MongoDB , ExpressJs , ReactJs , NodeJs , Tailwind CSS | ( link ) 
+ ● 
+ Initiated and designed an innovative REDACTED_NAME REDACTED_NAME REDACTED_NAME platform to facilitate full - stack Development learning for students . 
+ ● 
+ Engineered a built - in code editor allowing users to code , fostering hands - on learning and practical experience . 
+ ● 
+ Integrated quizzes to evaluate students ' knowledge and a comprehensive report section to track student progress . 
+ Vyaapaar - small business e - commerce website| Python , MongoDB , ExpressJs , ReactJs , and NodeJs | ( link ) 
+ ● 
+ Developed an end - to - end e - commerce platform with MERN stack that serves exclusively for small businesses . 
+ ● 
+ Assembled a Machine Learning model for predicting ratings of small - scale businesses using a Random Forest Regressor 
+ with an accuracy of 96 % . 
+ Phishing Website Detection using Classification Algorithms | Python , TensorFlow , Keras , Scikit| ( link ) 
+ ● 
+ Utilized Machine Learning to detect phishing websites , achieving a 97 % accuracy rate with an ensemble of classifiers . 
+ ● 
+ Published a research paper on the same in IRJET ( International Research Journal of Engineering and Technology ) . 
