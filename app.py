@@ -162,6 +162,9 @@ def job_listing():
 def job_details():
     return render_template('job-detail.html')
 
+@app.route('/result')
+def result():
+    return render_template('Result.html')
 @app.route('/display_text')
 def display_text():
     sanitized_file_path = os.path.join(app.config['SANTIZED_FOLDER'], 'sanitized_resume.txt')
