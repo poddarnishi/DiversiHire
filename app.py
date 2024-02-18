@@ -170,6 +170,10 @@ def register():
 def upload_form():
     return render_template('apply.html')
 
+@app.route('/job_listing.html')
+def job_listing():
+    return render_template('job-list.html')
+
 @app.route('/job_details.html')
 def job_details():
     return render_template('job-detail.html')
