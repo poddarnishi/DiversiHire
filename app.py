@@ -14,32 +14,19 @@ import fitz
 from flask import redirect, url_for
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+from flask import jsonify
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import string
+from sentence_transformers import SentenceTransformer, util
+
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return render_template('index.html')
-
-
-
-# @app.route('/upload', methods=['POST'])
-# def upload():
-#     if 'file' not in request.files:
-#         return 'No file part'
-    
-#     file = request.files['file']
-    
-#     if file.filename == '':
-#         return 'No selected file'
-    
-#     if file:
-#         pdf_reader = PyPDF2.PdfFileReader(file)
-#         text = ''
-#         for page_num in range(pdf_reader.numPages):
-#             page = pdf_reader.getPage(page_num)
-#             text += page.extractText()
-#         return text
     
 @app.route('/interview', methods=['GET','POST'])
 def speech_to_text():
@@ -239,5 +226,28 @@ def txt_to_pdf(input_txt, output_pdf):
 def display_pdf_text(pdf_text):
     return render_template('display.html', pdf_text=pdf_text)
   
+
+def compare_texts(job_description_file, answer_1_file):
+
+    def read_text_from_file(file_path):
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return file.read().strip()
+
+    model = SentenceTransformer('all-MiniLM-L6-v2')
+
+    job_description = read_text_from_file(job_description_file)
+    answer_1 = read_text_from_file(answer_1_file)
+
+    # Encode the texts to get their embeddings
+    job_description_embedding = model.encode(job_description)
+    answer_1_embedding = model.encode(answer_1)
+
+    similarity_1 = util.cos_sim(job_description_embedding, answer_1_embedding)
+    print(similarity_1)
+    return similarity_1.item()
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
