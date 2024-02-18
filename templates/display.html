@@ -7,10 +7,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
 
 		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="static/css/bootstrap.min.css">
+            <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="static/css/flaticon.css">
+            <link rel="stylesheet" href="static/css/price_rangs.css">
+            <link rel="stylesheet" href="static/css/slicknav.css">
+            <link rel="stylesheet" href="static/css/animate.min.css"> 
+            <link rel="stylesheet" href="static/css/magnific-popup.css">
+            <link rel="stylesheet" href="static/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="static/css/themify-icons.css">
+            <link rel="stylesheet" href="static/css/slick.css">
+            <link rel="stylesheet" href="static/css/nice-select.css"> 
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+            <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
             <link rel="stylesheet" href="assets/css/flaticon.css">
             <link rel="stylesheet" href="assets/css/slicknav.css">
@@ -21,12 +34,12 @@
             <link rel="stylesheet" href="assets/css/themify-icons.css">
             <link rel="stylesheet" href="assets/css/slick.css">
             <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/style.css"> -->
    </head>
 
    <body>
     <!-- Preloader Start -->
-    <div id="preloader-active">
+    <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -35,7 +48,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader Start -->
     <header>
         <!-- Header Start -->
@@ -46,7 +59,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img src="static/img/logo/logo.png" alt=""></a>
                             </div>  
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -117,79 +130,7 @@
                                 <div id="resume-content">
                                     <pre>{{ resume_content }}</pre>
                                 </div>
-                                <!-- <pre>
-
-                                    REDACTED_PHONE 
-                                    REDACTED_EMAIL 
-                                    REDACTED   
-                                     REDACTED  
-                                    EDUCATION 
-                                    
-                                    University of Massachusetts , Amherst                                                                                Sep 2023 – May 2025 
-                                    Master of Science in Computer Science , CGPA – 4.0 
-                                    COURSEWORK- REDACTED_NAME REDACTED_NAME , Data Science Fundamentals , Advanced Natural Language Processing , Distributed 
-                                    Computing & Systems , Software Engineering , Information Retrieval 
-                                    TECHNICAL SKILLS 
-                                    
-                                    ; 
-                                    Languages / Libraries : C / C++ , Python , REDACTED_NAME , JavaScript , SQL , Tensorflow , NLTK , Numpy , Pandas 
-                                    Technologies / Frameworks : Flask , Django , REDACTED_NAME , Node.js , Angular , React , Flutter , SpringBoot 
-                                    Developer Tools : Git , VS Code , Eclipse , Google Colab , REDACTED_NAME REDACTED_NAME , IntelliJ , MongoDB , MySQL , PostgreSQL , Sybase 
-                                    EXPERIENCE 
-                                    
-                                    MORGAN STANLEY | TECHNICAL ANALYST INTERN | MUMBAI , INDIA 
-                                      May 2022 – July 2022 
-                                    • Developed a full stack web application , ensuring controlled critical data updates by implementing maker - checker 
-                                    mechanism streamlining database change requests , verification , and modifications . 
-                                    • Demonstrated proficiency in implementing REDACTED_NAME for real - time UI update based on database table and actions ensuring 
-                                    seamless alignment of frontend with backend database . 
-                                    JOBDAE | SOFTWARE ENGINEER INTERN | REMOTE                                                                      May 2021 – July 2021 
-                                    • Contributed to backend development of JOBDAE ’s official website by establishing employee profile pages and implementing 
-                                    features to browse , apply , and track job applications . 
-                                    REDACTED_NAME REDACTED_NAME email notifications for clients upon job applications and status updates , enhancing user engagement  
-                                    PROJECTS AND PUBLICATIONS 
-                                    ; 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    Personalizing LLMs using Generative Retrieval | View Paper   | View Code 
-                                     
-                                    • Generated hypothesis documents based on user input and integrated embedding techniques for better semantic 
-                                    understanding , enhancing the efficiency of dense retrieval search in user profile history . 
-                                    • Implemented a BERT model to extract the most relevant chunks from retrieved documents , resulting in a 17 % increase in 
-                                    ROUGE-1 and a 13 % increase in ROUGE - L metrics of the overall model . 
-                                    Dark Web Intelligence – Zero Shot NER | Final Year Project | REDACTED_NAME : REDACTED Sunil Bhirud  
-                                     
-                                    • Proposed a novel information extraction workflow for REDACTED_NAME REDACTED_NAME corpus , prioritizing retrieval of critical data on illegal 
-                                    activities , contributing to efficient REDACTED_NAME Web analysis . 
-                                    • Eliminated the need of manual data for named entity recognition of unseen classes in Dark Web Corpus by leveraging the 
-                                    information present in the Concept net knowledge graph . 
-                                    DocuCare | Spring Boot , Angular , PostgreSQL | View Code 
-                                      
-                                    • Developed a patient tracker application using software engineering best practices , including version control with Git , organizing 
-                                    development into sprints with fixed durations , conflict resolution , and issue tracking . 
-                                    • Automated healthcare data processes by facilitating healthcare record updating , prescription management for doctors , while 
-                                    providing patients with features like appointment scheduling , record access , and feedback submission . 
-                                       DSLRED | REDACTED_NAME : REDACTED REDACTED_NAME REDACTED_NAME |   View paper                                                               
-                                    • Incorporated Media Pipe for accelerated feature extraction during rapid hand gesture movements for translating sign 
-                                    language from video streams to text yielding in a significant 1.55 % increase in accuracy . 
-                                    • Implemented LSTM model to analyze long - term temporal dynamics and deployed CNN model for conveying user emotion 
-                                    while gesture prediction . 
-                                    HisabKitab |Flutter , Firebase , Node.js | Secured 2nd Rank | View Code 
-                                      
-                                    • Developed a user - friendly GST billing website and mobile app within 24 hours , to enhance financial management by 
-                                    improved expense tracking and incorporating graphic chart reports . 
-                                    • Overcame challenges to create synchronized databases for Android and web applications , implementing Firebase 
-                                    authentication , and generating invoices as PDFs , resulting in improved accessibility and functionality . 
-                                    LEADERSHIP AND EXTRACURICUILAR 
-                                    
-                                    Community of Coders : Conducted Data Structures and Algorithm workshops . Guided students for on - campus internship drive . 
-                                    Technovanza : Organized Hackathons to encourage participation amongst first and second - year students in development . 
-                                    Enthusia : Represented the CE dept in interbranch table tennis , football , and cricket tournaments . Silver medal in athletics 
-                                   
-                                </pre> -->
+                                
                             </div>
                             
                     

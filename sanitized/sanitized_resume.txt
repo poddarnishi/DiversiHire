@@ -1,0 +1,87 @@
+REDACTED_NAME REDACTED_NAME of 1 
+ Print Date : 01/28/2024 
+ REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME :            Vaishnavi Shah 
+ Student ID :    33984452 
+ Birthdate : 
+ 01 - 10 
+ Beginning of Graduate Record 
+      
+ Fall 2023 
+ Program : 
+ Computer Science 
+ Major : 
+ Computer Science ( MS ) 
+ Course 
+ Description 
+ Attempted 
+ Earned 
+ Grade 
+ Points 
+ COMPSCI 
+  520 
+ Thry & Practice / REDACTED_NAME REDACTED_NAME 
+ 3.000 
+ 3.000 
+ A 
+ 12.000 
+ COMPSCI 
+  578 
+ Distributed Computng & Systems 
+ 3.000 
+ 3.000 
+ A 
+ 12.000 
+ COMPSCI 
+  646 
+ Information Retrieval 
+ 3.000 
+ 3.000 
+ A 
+ 12.000 
+ 
+ Attempted 
+ Earned 
+ GPA Units 
+ Points 
+ Term GPA : 
+ 4.000 
+ Term Totals : 
+ 9.000 
+ 9.000 
+ 9.000 
+ 36.000 
+ 
+ Cum GPA : 
+ 4.000 
+ Cum Totals : 
+ 9.000 
+ 9.000 
+ 9.000 
+ 36.000 
+      
+ Graduate Career Totals 
+ Attempted 
+ Earned 
+ GPA Units 
+ Points 
+ Cum Enrollment GPA : 
+ 4.000 
+ Cum Enrollment Totals : 
+ 9.000 
+ 9.000 
+ 9.000 
+ 36.000 
+ REDACTED_NAME REDACTED_NAME REDACTED_NAME : 
+ Transfer Totals : 
+ 0.000 
+ 0.000 
+ 0.000 
+ 0.000 
+ Combined Cum GPA : 
+ 4.000 
+ Combined Totals : 
+ 9.000 
+ 9.000 
+ 9.000 
+ 36.000 
+ End of Unofficial Transcript 
