@@ -14,26 +14,13 @@
         <h2>Speech Recognition Result:</h2>
         <p id="result"></p>
     </div>
-    <div>
-        <h2>Play Audio:</h2>
-        <audio controls id="audioPlayer">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
     <script>
         document.querySelector('form').addEventListener('submit', async (e) => {
             e.preventDefault();
             const response = await fetch('/speech-to-text', { method: 'POST'});
             const data = await response.text();
-            document.getElementById('result').textContent = data.text;
+            document.getElementById('result').textContent = data;
         });
-        fetch('/audio_url')
-            .then(response => response.json())
-            .then(data => {
-                // Set audio URL dynamically
-                document.getElementById('audioPlayer').src = data.audio_url;
-            })
-            .catch(error => console.error('Error:', error));
     </script>
 </body>
 </html>

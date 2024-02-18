@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('.html')
 
 # @app.route('/upload', methods=['POST'])
 # def upload():
@@ -28,23 +28,25 @@ def index():
 #             text += page.extractText()
 #         return text
     
-@app.route('/speech-to-text', methods=['POST'])
+@app.route('/speech-to-text', methods=['GET','POST'])
 def speech_to_text():
-    recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        recognizer.adjust_for_ambient_noise(source, duration=0.2)
-        print("Speak something...")
-        audio = recognizer.listen(source, timeout=10)
-    try:
-        text = recognizer.recognize_google(audio)
-        gTTS(text=text, lang='en', slow=False).save("static/Answer1.mp3")
-        audio_url = url_for('static', filename='Answer1.mp3')
-        print(text)
-        return jsonify({'audio_url': audio_url,'text':text})
-
-    except sr.UnknownValueError:
-        return "Could not understand audio"
-    except sr.RequestError as e:
-        return f"Error: {str(e)}"
+    if request.method=='GET':
+        return render_template('mic.html')
+    else:
+        recognizer = sr.Recognizer()
+        with sr.Microphone() as source:
+            recognizer.adjust_for_ambient_noise(source, duration=0.1)
+            print("Speak something...")
+            audio = recognizer.listen(source, timeout=10)
+        try:
+            text = recognizer.recognize_google(audio)
+            gTTS(text=text, lang='en', slow=False).save("static/Answer1.mp3")
+            # audio_url = url_for('static', filename='Answer1.mp3')
+            print(text)
+            return text
+        except sr.UnknownValueError:
+            return "Could not understand audio"
+        except sr.RequestError as e:
+            return f"Error: {str(e)}"
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0')
