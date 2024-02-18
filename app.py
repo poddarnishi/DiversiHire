@@ -147,7 +147,11 @@ def allowed_file(filename):
 
 @app.route('/form')
 def upload_form():
-    return render_template('upload_form.html')
+    return render_template('apply.html')
+
+@app.route('/job_details.html')
+def job_details():
+    return render_template('job-detail.html')
 
 @app.route('/display_text')
 def display_text():
@@ -155,7 +159,7 @@ def display_text():
     with open(sanitized_file_path, 'r', encoding='utf-8') as f:
         sanitized_resume_content = f.read()
     #print(sanitized_resume_content)
-    return render_template('display_text.html', resume_content=sanitized_resume_content)
+    return render_template('display.html', resume_content=sanitized_resume_content)
 
 
 def sanitize(text):
@@ -180,7 +184,7 @@ def upload_file():
         with open(sanitized_file_path, 'w', encoding='utf-8') as f:
             f.write(clean_txt)
         
-        txt_to_pdf('sanitized/sanitized_resume.txt', 'sanitized/sanitized_resume.pdf')
+        #txt_to_pdf('sanitized/sanitized_resume.txt', 'sanitized/sanitized_resume.pdf')
         return redirect(url_for('display_text'))
     else:
         return 'Invalid file type'
@@ -211,7 +215,7 @@ def txt_to_pdf(input_txt, output_pdf):
     c.save()
 
 def display_pdf_text(pdf_text):
-    return render_template('display_text.html', pdf_text=pdf_text)
+    return render_template('display.html', pdf_text=pdf_text)
   
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.1')
