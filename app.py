@@ -42,7 +42,7 @@ def speech_to_text():
             audio_url = url_for('static', filename='Answer1.mp3')
             print(text)
             clean_text = sanitize(text)
-            save_text_to_file(clean_text,"/Users/nishipoddar/Downloads/HackHer/sanitized/sanitized_resume.txt")
+            save_text_to_file(clean_text,"sanitized/sanitized_resume.txt")
             return clean_text
         except sr.UnknownValueError:
             return "Could not understand audio"
@@ -164,7 +164,10 @@ def job_details():
 
 @app.route('/result')
 def result():
-    return render_template('Result.html')
+    score = compare_texts('static/job.txt', 'static/answer.txt')
+    score = round(score, 2)
+    return render_template('Result.html', similarity_score=score)
+
 @app.route('/display_text')
 def display_text():
     sanitized_file_path = os.path.join(app.config['SANTIZED_FOLDER'], 'sanitized_resume.txt')
