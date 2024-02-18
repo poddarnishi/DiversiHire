@@ -1,1 +1,58 @@
-hi
+REDACTED_NAME REDACTED_NAME 
+ REDACTED_PHONE | REDACTED_EMAIL | REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME Education 
+ MS in Computer Science 
+ Expected Graduation - Dec 2024 
+ University of Massachusetts Amherst 
+ Massachusetts , REDACTED 
+ Bachelor of Technology in Computer Engineering ( Honors ) 
+ Jul 2019 – May 2023 
+ NMIMS University | GPA 3.88/4.0 ( Meritorious List ) 
+ Mumbai , REDACTED 
+ Minor : REDACTED_NAME REDACTED_NAME and Data Analytics 
+ Publications 
+ A Review on Autonomous Vehicles : Progress , Methods and Challenges 
+ Link 
+ • Researched ML algorithms like CNN , YOLO , LiDAR for real - time environmental perception in driving scenarios . 
+ REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME REDACTED_NAME and REDACTED_NAME REDACTED_NAME REDACTED_NAME models to predict driver intent and navigate complex driving situations . 
+ • This paper was published in July 2022 in the Electronics Journal , MDPI receiving 120 + citations . 
+ Experience 
+ Software Development Intern 
+ May – Jun 2022 
+ Metta Social Solutions Pvt . Ltd. — Pune , REDACTED 
+ • Created an optimal data pipeline using Python and SQL for over 20,000 NGOs to generate actionable insights . 
+ • Utilized UIPath and MySQL for automated data scraping and API calls , boosting the data collection efficiency . 
+ • Designed a sophisticated process to perform feature extraction for due diligence of NGOs and CSR projects using 
+ sentiment analysis to analyze news articles and random forest like models to predict fraud detection . 
+ Team Leader 
+ Aug 2019 - Jun 2021 
+ Project Vishuddh , Enactus — Mumbai , REDACTED 
+ • Drove social impact by empowering 30 + women in establishing a sustainable detergent and sanitation business . 
+ • Implemented strategic supply chain optimizations , resulting in a substantial 40 % reduction in production costs . 
+ • Led Research and Development initiatives , fostering innovation and ideation to uplift rural artisans and strategically 
+ identify untapped markets for their products . 
+ Projects 
+ Code Summarization 
+ Mar 2023 
+ • Created an NLP tool using LLMs CodeBERT and RoBERTa for automatic real - time English summaries of code files . 
+ • Enhanced project collaboration by optimizing transformer based algorithms , achieving an accuracy of 0.83 through 
+ cross - validation . 
+ Hairstyle Recommendation System 
+ Nov 2021 
+ • Developed a Flask - based face detection app using MLP classifier achieving 0.74 accuracy over KNN and LDA models . 
+ • Implemented hairstyle recommendation system based on trends and preferences using OpenCV enhancing UX . 
+ Movie Ticket Booking System 
+ Mar 2021 
+ • Developed a Django - based ticket booking portal , enhancing data validation and management through MySQL . 
+ • Implemented a movie recommendation system using SVM with a linear kernel , using purchase history to increase user 
+ engagement and satisfaction . 
+ Technical Skills 
+ • Skills : C , REDACTED_NAME , REDACTED_NAME , Python , C # , SAS , SQL , Pytorch , Git , MATLAB , R , REDACTED_NAME , NLTK , spaCy 
+ • Coursework : Data Structures , Design and Analysis of Algorithms , Relational databases , Artificial Intelligence ( AI ) , 
+ Machine Learning , NLP , Neural Networks , Data Visualization , Unix programming , Operating Systems , Cybersecurity 
+ • Certifications : Data Science and visualization specialization ( IBM ) , Machine Learning ( University of Washington ) 
+ Achievements 
+ • Awarded Mitacs GRI Summer Research Intern grant from Dalhousie University , REDACTED in 2022 to assist in research on 
+ the effects of the pandemic on software professionals 
+ • Secured Runners - up in National - level Coding competition , ALGORYTHM in 2021 
+ • Finalist in National - level Business planning competition conducted by IIM Indore for the strategic presentation of social 
+ entrepreneurship venture , Project Vishuddh , in 2020 
