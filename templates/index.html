@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+</head>
+<body>
+    <h1>Speech to Text Converter</h1>
+    <form action="/speech-to-text" method="POST">
+        <button type="submit">Start Recording</button>
+    </form>
+    <div>
+        <h2>Speech Recognition Result:</h2>
+        <p id="result"></p>
+    </div>
+    <div>
+        <h2>Play Audio:</h2>
+        <audio controls id="audioPlayer">
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <button id="playAudioButton">Play Audio File</button>
+    <script>
+        document.querySelector('form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const response = await fetch('/speech-to-text', { method: 'POST'});
+            const data = await response.text();
+            document.getElementById('result').textContent = data;
+        });
+        function playAudio(url) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.src = url;
+            audioPlayer.play();
+        }
+        document.getElementById('playAudioButton').addEventListener('click', () => {
+            // Specify the URL of the audio file to play
+            const audioFileUrl = 'Answer1.mp3'; // Replace with your audio file URL
+            playAudio(audioFileUrl);
+        });
+    </script>
+</body>
+</html>
