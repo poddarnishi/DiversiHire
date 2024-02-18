@@ -148,6 +148,23 @@ def remove_propn(text):
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        # Handle login form submission
+        # Validate credentials (you will implement this)
+        # Redirect to appropriate page
+        return render_template('index.html')
+    return render_template('login.html')
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        # Handle register form submission
+        # Register user (you will implement this)
+        # Redirect to appropriate page
+        return render_template('index.html')
+    return render_template('register.html')
 
 @app.route('/form')
 def upload_form():
@@ -222,4 +239,4 @@ def display_pdf_text(pdf_text):
     return render_template('display.html', pdf_text=pdf_text)
   
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.1')
+    app.run(debug=True)
