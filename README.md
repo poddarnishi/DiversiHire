@@ -43,3 +43,7 @@ This project was a whirlwind of learning and collaboration, pushing us to new he
    1. We plan to leverage artificial intelligence and machine learning algorithms  to more accurately identify and neutralize implicit bias triggers in resumes and interviews, including subtle cues that may currently escape detection. 
  2.⁠ ⁠We aim to develop predictive analytics tools to help organizations understand and improve their diversity hiring metrics over time.
  3.⁠ ⁠Equihire aims to extend its reach to support organizations and job seekers worldwide. This includes localizing our platform to accommodate various languages and cultural contexts, making blind recruitment a global standard.
+
+
+## Youtube link
+https://www.youtube.com/watch?v=zQujn0Dww7E&t=1s
