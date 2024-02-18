@@ -76,10 +76,13 @@
                             </div>
                         </div>
                         <div>
-                            <a href="#" id="start-recording-btn" class="btn post-btn" >Start Recording</a>
+                         <form action="/interview" method="POST">
+                                <button type="submit" class="btn post-btn">Start Recording</button>
+                            </form>
+                            
                         </div>
                         <div id="generated-text" style="color: rgb(224, 47, 148); padding-top: 50px;">
-                        
+                        This is where the text will be generated.
                     </div>
                 </div>
                 
@@ -261,15 +264,12 @@
         <script src="./assets/js/main.js"></script>
 
         <script>
-            document.getElementById('start-recording-btn').addEventListener('click', function(event) {
-                event.preventDefault(); // Prevent default anchor action
-            
-                // Simulate text generation
-                const generatedText = "This is the generated text after recording.";
-            
-                // Update the content of the 'generated-text' div
-                document.getElementById('generated-text').textContent = generatedText;
-            });
+            document.querySelector('form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const response = await fetch('/interview', { method: 'POST'});
+            const data = await response.text();
+            document.getElementById('generated-text').textContent = data;
+        });
         </script>
         
     </body>

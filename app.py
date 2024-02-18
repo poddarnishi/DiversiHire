@@ -21,9 +21,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/interview')
-def interview():
-    return render_template('interview.html')
+
 
 # @app.route('/upload', methods=['POST'])
 # def upload():
@@ -43,12 +41,9 @@ def interview():
 #             text += page.extractText()
 #         return text
     
-@app.route('/speech-to-text', methods=['POST'])
+@app.route('/interview', methods=['GET','POST'])
 def speech_to_text():
-
-    if request.method=='GET':
-        return render_template('mic.html')
-    else:
+    if request.method=='POST':
         recognizer = sr.Recognizer()
         with sr.Microphone() as source:
             recognizer.adjust_for_ambient_noise(source, duration=0.2)
@@ -59,12 +54,14 @@ def speech_to_text():
             gTTS(text=text, lang='en', slow=False).save("static/Answer1.mp3")
             audio_url = url_for('static', filename='Answer1.mp3')
             print(text)
-            return text
-
+            clean_text = sanitize(text)
+            save_text_to_file(clean_text,"/Users/nishipoddar/Downloads/HackHer/sanitized/sanitized_resume.txt")
+            return clean_text
         except sr.UnknownValueError:
             return "Could not understand audio"
         except sr.RequestError as e:
             return f"Error: {str(e)}"
+    return render_template('interview.html')
 def save_text_to_file(text, filename):
     with open(filename, 'w') as file:
         file.write(text)
