@@ -1,6 +1,6 @@
 ## Inspiration
 Rethinking Recruitment Through Equihire
-Today's keynote speaker ignited a powerful conversation within our team, prompting us to confront the pervasive issue of bias in our industry's hiring practices. We recognize the insidious nature of unconscious bias, where deeply ingrained beliefs and societal conditioning can unfairly disadvantage diverse candidates. Despite legal advancements and evolving social attitudes, a disturbing reality persists qualified individuals from underrepresented groups still face significant hurdles in securing employment.
+HackHer's keynote speaker ignited a powerful conversation within our team, prompting us to confront the pervasive issue of bias in our industry's hiring practices. We recognize the insidious nature of unconscious bias, where deeply ingrained beliefs and societal conditioning can unfairly disadvantage diverse candidates. Despite legal advancements and evolving social attitudes, a disturbing reality persists qualified individuals from underrepresented groups still face significant hurdles in securing employment.
 As highlighted by studies, applicants of color must navigate a system where they are consistently required to submit significantly more applications compared to their white counterparts to secure even a single interview opportunity. This stark disparity, extending beyond race to encompass gender and other identities, underscores the urgent need for transformative solutions.
 
 In response to this critical challenge, we introduce Equihire, a revolutionary blind recruitment platform. This innovative approach goes beyond masking personal data like age, gender, and education. Equihire takes the unprecedented step of **anonymizing voices during interviews**, ensuring that candidates are evaluated solely on their skills and qualifications, free from the influence of personal biases.
@@ -27,7 +27,7 @@ Recruiter Journey:
 
 ## How we built it:
 Front-end: HTML, CSS, Javascript, Bootstrap
-Middleware & Backend: Python, Flask, SQLAlchemy,
+Middleware & Backend: Python, Flask, SQLAlchemy
 ML Stack: PDF Parser, SpaCy, Speech Recognition, Setence-Bert, Named Entity Recognition, GTTS
 
 ## Challenges we ran into
