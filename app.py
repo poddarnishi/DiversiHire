@@ -38,11 +38,12 @@ def speech_to_text():
             audio = recognizer.listen(source, timeout=10)
         try:
             text = recognizer.recognize_google(audio)
-            gTTS(text=text, lang='en', slow=False).save("static/Answer1.mp3")
-            audio_url = url_for('static', filename='Answer1.mp3')
+            
             print(text)
             clean_text = sanitize(text)
-            save_text_to_file(clean_text,"sanitized/sanitized_resume.txt")
+            gTTS(text=clean_text, lang='en', slow=False).save("static/Answer1.mp3")
+            audio_url = url_for('static', filename='Answer1.mp3')
+            save_text_to_file(clean_text,"static/answer.txt")
             return clean_text
         except sr.UnknownValueError:
             return "Could not understand audio"
