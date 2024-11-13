@@ -20,6 +20,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import string
 from sentence_transformers import SentenceTransformer, util
+import google.generativeai as genai
+import markdown
 
 
 app = Flask(__name__)
@@ -165,9 +167,9 @@ def job_details():
 
 @app.route('/result')
 def result():
-    score = compare_texts('static/job.txt', 'static/answer.txt')
-    score = round(score, 2)
-    return render_template('Result.html', similarity_score=score)
+    interview_relevance = compare_texts('static/job.txt', 'static/answer.txt')
+    # score = round(score, 2)
+    return render_template('Result.html', interview_relevance=interview_relevance)
 
 @app.route('/display_text')
 def display_text():
@@ -234,26 +236,76 @@ def display_pdf_text(pdf_text):
     return render_template('display.html', pdf_text=pdf_text)
   
 
-def compare_texts(job_description_file, answer_1_file):
+# def compare_texts(job_description_file, answer_1_file):
 
+#     def read_text_from_file(file_path):
+#         with open(file_path, 'r', encoding='utf-8') as file:
+#             return file.read().strip()
+
+#     model = SentenceTransformer('all-MiniLM-L6-v2')
+
+#     job_description = read_text_from_file(job_description_file)
+#     answer_1 = read_text_from_file(answer_1_file)
+
+#     # Encode the texts to get their embeddings
+#     job_description_embedding = model.encode(job_description)
+#     answer_1_embedding = model.encode(answer_1)
+
+#     similarity_1 = util.cos_sim(job_description_embedding, answer_1_embedding)
+#     print(similarity_1)
+#     return similarity_1.item()
+
+
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+
+def compare_texts(job_description_file, answer_1_file):
     def read_text_from_file(file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
             return file.read().strip()
 
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-
+    # Read job description and answer from files
     job_description = read_text_from_file(job_description_file)
     answer_1 = read_text_from_file(answer_1_file)
 
-    # Encode the texts to get their embeddings
-    job_description_embedding = model.encode(job_description)
-    answer_1_embedding = model.encode(answer_1)
+    # Create prompt for relevance evaluation
+    prompt = f"""
+Job Description: {job_description}
 
-    similarity_1 = util.cos_sim(job_description_embedding, answer_1_embedding)
-    print(similarity_1)
-    return similarity_1.item()
+Interview Question: Tell us about a time when you had to handle a difficult client.
 
+Candidate's Answer: {answer_1}
 
+Instructions:
+1. Evaluate how well the candidate's answer aligns with the job description.
+2. Assess the relevance of the candidate's answer to the interview question.
+3. Consider the following criteria:
+    - How effectively did the candidate handle the difficult client?
+    - Does the answer demonstrate skills relevant to a sales role, such as problem-solving, empathy, effective communication, and the ability to maintain a positive relationship?
+    - How well does the candidate’s answer reflect the specific needs of the sales position described in the job description?
+4. Provide a relevance score from 1 to 10, where 10 means the answer is highly relevant and well-suited for the role.
+5. Provide a brief explanation of why you gave this score, touching on specific strengths or areas for improvement in the answer.
+"""
+
+    # Create the model
+    generation_config = {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": 40,
+        "max_output_tokens": 8192,
+    }
+
+    model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash",
+        generation_config=generation_config,
+    )
+
+    # Start a chat session and send the prompt
+    chat_session = model.start_chat(history=[])
+    response = chat_session.send_message(prompt)
+
+    relevance_response = response.text
+    html_response = markdown.markdown(relevance_response)
+    return html_response
 
 
 if __name__ == '__main__':

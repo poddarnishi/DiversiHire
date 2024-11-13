@@ -6,6 +6,23 @@
         <title>Job board HTML-5 Template </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .resume-content {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                box-sizing: border-box;
+                overflow-x: auto;
+                word-wrap: break-word;
+            }
+    
+            @media (max-width: 768px) {
+                .resume-content {
+                    padding: 10px;
+                }
+            }
+        </style>
         <link rel="manifest" href="site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
@@ -84,10 +101,10 @@
                             <div class="post-details1">
                                 <!-- Small Section Tittle -->
                                 <div class="testimonial-top-cap">
-                                    <p>The similarity score for the interview and the job description is: </p>
+                                    <p>Analysis of the candidates interview and resume : </p>
                                 </div>
                                 <div id="resume-content">
-                                    <pre>{{ similarity_score * 100}} %</pre>
+                                    <div>Interview Analysis: {{ interview_relevance | safe}} </div>
                                 </div>
                                 
                             </div>
